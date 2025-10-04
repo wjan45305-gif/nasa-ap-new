@@ -12,7 +12,7 @@ app.post("/webhook", async (req, res) => {
   let responseText = "";
 
   if (intent === "Astronomy Picture of the Day") {
-    const apiURL = `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}`;
+    const apiURL = `https://api.nasa.gov/planetary/apod?api_key=${NFcXNtjSSRI4yMeT2nlOvbb5AP6dGguVPnSGehoMP}`;
     const data = await fetch(apiURL).then((r) => r.json());
     responseText = `${data.title}: ${data.explanation}\nImage: ${data.url}`;
   }
